@@ -15,4 +15,7 @@ Vi erbjuder ett brett utbud av smetprodukter för alla smaker och behov. Utforsk
 Du skickar in ingredienser och vi gör det resterande för dig!
 Din vision, vår smet!
 
+### Ljud Effekt
+Ljud effekt finns på "Smeta Mig" knappen
+
 ## [Hitta oss här!]()

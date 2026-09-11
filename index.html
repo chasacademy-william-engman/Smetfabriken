@@ -3,6 +3,8 @@
   <head>
 
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nosifer">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
   <link rel="shortcut icon" href="bilder/smetfabriken-logo.png" type="image/png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -15,11 +17,12 @@
         alt="Smetfabriken – logotyp med skål och visp"
         width="240">
     <div>
-        <h1>Smetfabriken</h1>
-        <p>Du skickar ingredienserna – vi gör resten</p>
+        <p>Bild av bunke med lila smet och en slickepott</p>
+        <h1 id="Rubrik">Smetfabriken</h1>
+        <p id="ValkommenTxt"></p>
     </div>
     </header>
-  <body>Välkommen till Smetfabriken! Här kan du hitta information om våra produkter och tjänster. </p>
+  <body><p>Välkommen till Smetfabriken! Här kan du hitta information om våra produkter och tjänster. </p>
      <p>Vi erbjuder ett brett utbud av smetprodukter för alla smaker och behov. Utforska vår webbplats för att lära dig mer om våra erbjudanden och hur du kan beställa.</p>
      <p>Du skickar in ingredienser och vi gör det resterande för dig!</p>
      <p>Din vision, vår smet!</p>
@@ -31,14 +34,13 @@
      <p id="count">Du har blivit smetad 0 gånger</p>
      <button type="button" class="smet" onclick="smeta()">Smeta mej!</button>
 
-    <ul>
-    <li>Smethan</li>
-    <li>Smetgeniy</li>
-    <li>Smerran</li>
-    <li>Smilliam</li>
-    <li>Smetvig</li>
-    <li>Smetrob</li>
-    </ul>
+    <div id="team-container"></div>
+
+    <img class="gruppbild" src="bilder/TeamSmet.jpeg">
+    <p id="quote">Tryck på knappen för ett smetigt citat.</p>
+    <button type="button" class="smet" onclick="nyttCitat()">Nytt citat</button>
+    <p >Redovisning sker om: </p>
+    <p id="demo"></p>
 </body>
     <div id="splash-lager"></div>
 
@@ -46,7 +48,7 @@
     <div class="fotnot"></div>
     <footer>Smetfabriken - All rights reserved. 2026®</footer>
 
-    <p id="demo"></p>
+    
 </html> 
 
 
