@@ -10,7 +10,8 @@ body {
   background-color: var(--bakgrund);
   color: var(--text);
   line-height: 1.6;
-
+  width: 100%;
+  min-height: 100vh;
   max-width: 70ch;
   margin: 0 auto;
   padding: 3rem 1.5rem;
@@ -38,6 +39,23 @@ header, footer {
     border-radius: 10px;
     font-size: 20px;
     cursor: pointer;
+}
+
+@keyframes fallaLinjärt {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(calc(100vh + 100px)); 
+  }
+}
+
+.konfettiSmet {
+  animation: fallaLinjärt linear forwards;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  top: -50px;
 }
 
 .smet:hover {
@@ -76,4 +94,11 @@ div.fotnot {
 	width: 585px;
     margin-bottom: 5px;
 
+}
+
+.easter-egg {
+    background-image: url("bilder/giphy.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
