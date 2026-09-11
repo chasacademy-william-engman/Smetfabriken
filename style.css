@@ -1,0 +1,79 @@
+:root {
+  --lila: #cfb9e8;
+  --lila-mork: #6b4e91;
+  --bakgrund: #f7f3fc;
+  --text: #2e2438;
+}
+
+body {
+  font-family: "Sommet", "Trebuchet MS", sans-serif;
+  background-color: var(--bakgrund);
+  color: var(--text);
+  line-height: 1.6;
+
+  max-width: 70ch;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+h1, h2, h3 {
+  color: var(--lila-mork);
+}
+
+a {
+  color: var(--lila-mork);
+}
+
+header, footer {
+  background-color: var(--lila);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.smet {
+    background-color: rgb(67, 4, 87);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.smet:hover {
+    background-color: var(--lila-mork);
+}
+
+#splash-lager {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash {
+  width: 0;
+  opacity: 0;
+}
+
+.splash.kor {
+  animation: splash-in 1.6s cubic-bezier(.15, .85, .3, 1) forwards;
+}
+
+@keyframes splash-in {
+  0%   { width: 8vmin;  opacity: 0; transform: rotate(var(--v)); }
+  35%  { width: 115vmin; opacity: 1; transform: rotate(var(--v)); }
+  48%  { width: 95vmin;  opacity: 1; transform: rotate(var(--v)); }
+  100% { width: 95vmin;  opacity: 0; transform: rotate(var(--v)); }
+}
+
+div.fotnot { 
+	background-color: black;
+	height: 1px;
+	width: 585px;
+    margin-bottom: 5px;
+
+}
